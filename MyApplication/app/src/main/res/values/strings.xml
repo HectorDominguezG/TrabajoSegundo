@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="nopulsado">Nadie ha pulsado el botón</string>
+    <string name="pulsado">Héctor ha pulsado el botón</string>
+    <string name="botonpulsar">Pulsar</string>
+    <string name="botonpulsar2">Resetear</string>
+</resources>
