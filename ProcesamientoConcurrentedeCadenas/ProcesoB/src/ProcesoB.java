@@ -7,13 +7,15 @@ public class ProcesoB {
     public static void main(String[] args) throws Exception {
         InputStreamReader input = new InputStreamReader(System.in);
         BufferedReader reader = new BufferedReader(input);
-        String palabracogida = reader.readLine();
-        int caracteres = 0;
-        for (int i = 0; i < palabracogida.length(); i++) {
-            caracteres ++;
+        String palabracogida = "";
+        int caracteres;
+        StringBuilder cadena = new StringBuilder();
+        while ((palabracogida = reader.readLine()) != null) {
+            caracteres = palabracogida.length();
+            cadena.append(palabracogida + ", " + caracteres + " ");
         }
         OutputStream outStream = System.out;
         PrintWriter writer = new PrintWriter(outStream, true);
-        writer.println(palabracogida + caracteres);
+        writer.println(cadena);
     }
 }
